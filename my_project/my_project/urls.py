@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('mainApp.urls')),
     path('posts/', include('posts.urls')),
     path('news/', include('news.urls')),
+    path('accounts/', include('allauth.urls')),
 
 ]

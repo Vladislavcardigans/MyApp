@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
 </head>
 <body>
+    <div class="container-fluid" style="background-color: #1b1e21">
+        <div>
+                {% if username %}
+            <p class="text-right"><a href="/accounts/logout">Выйти ({{ username}})</a></p>
+                {% else %}
+            <p class="text-right"><a href="/accounts/login">Войти</a></p>
+                {% endif %}
+        </div>
+    </div>
     <div class="jumbotron">
       <div class="container">
         <h1>{% include "mainApp/includes/some_html.html" %}</h1>
